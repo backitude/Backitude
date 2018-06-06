@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="interval_list">
+		<item>15 segundos</item>
+		<item>30 segundos</item>
+		<item>1 minuto</item>
+		<item>3 minutos</item>
+		<item>5 minutos</item>
+		<item>10 minutos</item>
+		<item>15 minutos</item>
+		<item>20 minutos</item>
+		<item>30 minutos</item>
+		<item>1 hora</item>
+		<item>3 horas</item>
+		<item>Nenhum</item>
+	</string-array>
+
+	<string-array name="interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>60000</item>
+		<item>180000</item>
+		<item>300000</item>
+		<item>600000</item>
+		<item>900000</item>
+		<item>1200000</item>
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+		<item>99999999</item>
+	</string-array>
+
+	<string-array name="timeout_interval_list">
+		<item>15 segundos</item>
+		<item>30 segundos</item>
+		<item>45 segundos</item>
+		<item>1 minuto</item>
+		<item>5 minutos</item>
+	</string-array>
+
+	<string-array name="timeout_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>45000</item>
+		<item>60000</item>
+		<item>300000</item>
+	</string-array>
+
+	<string-array name="statusBar_options">
+		<item>Não exibir</item>
+		<item>Exibir apenas quando estiver localizando</item>
+		<item>Exibir apenas quando a aplicação estiver ativa</item>
+		<item>Exibir apenas quando atualizando em tempo real</item>
+		<item>Exibir apenas quando estiver localizando ou quando atualizando em tempo real</item>
+	</string-array>
+
+	<string-array name="statusBar_option_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+
+	<string-array name="update_interval_list">
+		<item>Nenhuma</item>
+		<item>15 minutos</item>
+		<item>30 minutos</item>
+		<item>1 hora</item>
+		<item>3 horas</item>
+	</string-array>
+
+	<string-array name="update_interval_values">
+		<item>0</item>
+		<item>900000</item>
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+	</string-array>
+
+	<string-array name="realtime_interval_list">
+		<item>15 segundos</item>
+		<item>30 segundos</item>
+		<item>1 minuto</item>
+		<item>3 minutos</item>
+		<item>5 minutos</item>
+		<item>10 minutos</item>
+		<item>15 minutos</item>
+		<item>20 minutos</item>
+		<item>30 minutos</item>
+		<item>1 hora</item>
+		<item>3 horas</item>
+	</string-array>
+
+	<string-array name="realtime_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>60000</item>
+		<item>180000</item>
+		<item>300000</item>
+		<item>600000</item>
+		<item>900000</item>
+		<item>1200000</item>
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+	</string-array>
+
+	<string-array name="realtime_timeout_interval_list">
+		<item>15 segundos</item>
+		<item>30 segundos</item>
+		<item>45 segundos</item>
+		<item>1 minuto</item>
+		<item>5 minutos</item>
+	</string-array>
+
+	<string-array name="realtime_timeout_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>45000</item>
+		<item>60000</item>
+		<item>300000</item>
+	</string-array>
+	
+	<string-array name="wifi_mode_interval_list">
+		<item>30 minutos</item>
+		<item>1 hora</item>
+		<item>3 horas</item>
+		<item>6 horas</item>
+		<item>12 horas</item>
+	</string-array>
+
+	<string-array name="wifi_mode_interval_values">
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+		<item>21600000</item>
+		<item>43200000</item>
+	</string-array>
+
+	<string-array name="wifi_mode_timeout_interval_list">
+		<item>15 segundos</item>
+		<item>30 segundos</item>
+		<item>45 segundos</item>
+		<item>1 minuto</item>
+		<item>5 minutos</item>
+	</string-array>
+
+	<string-array name="wifi_mode_timeout_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>45000</item>
+		<item>60000</item>
+		<item>300000</item>
+	</string-array>
+	
+	<string-array name="max_steals_interval_list">
+		<item>15 segundos</item>
+		<item>30 segundos</item>
+		<item>1 minuto</item>
+		<item>3 minutos</item>
+		<item>5 minutos</item>
+	</string-array>
+	
+	<string-array name="max_steals_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>60000</item>
+		<item>180000</item>
+		<item>300000</item>
+	</string-array>
+	
+	<string-array name="min_distance_list">
+		<item>Nenhuma</item>
+		<item>10 metros</item>
+		<item>20 metros</item>
+		<item>50 metros</item>
+		<item>100 metros</item>
+		<item>250 metros</item>
+		<item>500 metros</item>
+		<item>1000 metros</item>
+		<item>2000 metros</item>
+		<item>3500 metros</item>
+		<item>5000 metros</item>
+		<item>Variável</item>
+	</string-array>
+
+	<string-array name="min_distance_values">
+		<item>0</item>
+		<item>10</item>
+		<item>20</item>
+		<item>50</item>
+		<item>100</item>
+		<item>250</item>
+		<item>500</item>
+		<item>1000</item>
+		<item>2000</item>
+		<item>3500</item>
+		<item>5000</item>
+		<item>99999999</item>
+	</string-array>
+
+	<string-array name="gpsOption_entries">
+		<item>GPS, com Wi-Fi/Triangulação de Antenas como backup</item>
+		<item>GPS, com Wi-Fi como backup</item>
+		<item>GPS apenas</item>
+		<item>Wi-Fi, com GPS/Triangulação de Antenas como backup</item>
+		<item>Wi-Fi, com GPS como backup</item>
+		<item>Wi-Fi, com Triangulação de Antenas como backup</item>
+		<item>Wi-Fi, depois GPS/Triangulação de Antenas como backup</item>
+		<item>Wi-Fi, depois GPS como backup</item>
+		<item>Wi-Fi apenas</item>
+	</string-array>
+
+	<string-array name="gpsOption_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>8</item>
+		<item>9</item>
+		<item>7</item>
+	</string-array>
+
+	<string-array name="offlineSync_syncOptions_list">
+		<item>Apenas manualmente</item>
+		<item>Apenas quando o Wi-Fi estiver ligado</item>
+		<item>Sempre que houver conexão de dados</item>
+	</string-array>
+
+	<string-array name="offlineSync_syncOptions_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="minGpsAccuracy_entries">
+		<item>4 metros</item>
+		<item>6 metros</item>
+		<item>8 metros</item>
+		<item>12 metros</item>
+		<item>20 metros</item>
+		<item>50 metros</item>
+	</string-array>
+
+	<string-array name="minGpsAccuracy_values">
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>12</item>
+		<item>20</item>
+		<item>50</item>
+	</string-array>
+
+	<string-array name="minWifiAccuracy_entries">
+		<item>20 metros</item>
+		<item>40 metros</item>
+		<item>75 metros</item>
+		<item>100 metros</item>
+		<item>200 metros</item>
+		<item>400 metros</item>
+	</string-array>
+
+	<string-array name="minWifiAccuracy_values">
+		<item>20</item>
+		<item>40</item>
+		<item>75</item>
+		<item>100</item>
+		<item>200</item>
+		<item>400</item>
+	</string-array>
+	
+	<string-array name="fallbackOptions_entries">
+		<item>Utilize a localização mais precisa, ou repetir anterior</item>
+		<item>Utilize a localização mais precisa, ou não atualizar</item>
+		<item>Repita local anterior, se o valor exato não é encontrado</item>
+		<item>Não actualizar se a localização exata não é encontrada</item>
+	</string-array>
+	
+	<string-array name="fallbackOptions_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+</resources>
+	

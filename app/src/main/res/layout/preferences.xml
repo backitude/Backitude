@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+	<PreferenceCategory android:title="@string/category_polling"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" >
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/polling_settings_title" android:summary="@string/polling_settings_summary"
+			android:key="@string/polling_settings_key" />
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/realtime_settings_title" android:summary="@string/realtime_settings_summary"
+			android:key="@string/realtime_settings_key" />
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/wifi_mode_settings_title" android:summary="@string/wifi_mode_settings_summary"
+			android:key="@string/wifi_mode_settings_key" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/category_update"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" >
+	    <Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/update_settings_title" android:summary="@string/update_settings_summary"
+			android:key="@string/update_settings_key" />
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/accuracy_settings_title" android:summary="@string/accuracy_settings_summary"
+			android:key="@string/accuracy_settings_key" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/category_output"
+	    android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" >
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/server_settings_title" android:summary="@string/server_settings_summary"
+			android:key="@string/server_settings_key" />
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/push_settings_title" android:summary="@string/push_settings_summary"
+			android:key="@string/push_settings_key" />		
+		<ListPreference android:title="@string/export_title"
+			android:summary="@string/export_summary" android:key="@string/export_key"
+			android:defaultValue="@string/export_default" android:entries="@array/export_entries"
+			android:entryValues="@array/export_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/category_additional"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" >
+		<Preference android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:key="@string/offline_settings_key"
+            android:summary="@string/offline_settings_summary"
+            android:title="@string/offline_settings_title" />
+        <Preference android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:key="@string/account_prefs_key"
+            android:summary="@string/account_prefs_summary"
+            android:title="@string/account_prefs_title" />
+		<ListPreference android:title="@string/statusBar_title"
+			android:summary="@string/statusBar_summary" android:key="@string/statusBar_key"
+			android:defaultValue="@string/statusBar_default" android:entries="@array/statusBar_options"
+			android:entryValues="@array/statusBar_option_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />	
+		<CheckBoxPreference android:title="@string/display_error_title"
+			android:defaultValue="true" android:summary="@string/display_error_text"
+			android:key="@string/display_error_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+	</PreferenceCategory>
+	
+</PreferenceScreen>

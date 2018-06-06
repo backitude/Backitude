@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+
+	<PreferenceCategory android:title="@string/category_min_accuracy" 
+	    android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+	    
+		<ListPreference android:title="@string/minGpsAccuracy_title"
+			android:summary="@string/minGpsAccuracy_summary" android:key="@string/minGpsAccuracy_key"
+			android:defaultValue="@string/minGpsAccuracy_default" android:entries="@array/minGpsAccuracy_entries"
+			android:entryValues="@array/minGpsAccuracy_values"
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		
+		<ListPreference android:title="@string/minWifiAccuracy_title"
+			android:summary="@string/minWifiAccuracy_summary" android:key="@string/minWifiAccuracy_key"
+			android:defaultValue="@string/minWifiAccuracy_default" android:entries="@array/minWifiAccuracy_entries"
+			android:entryValues="@array/minWifiAccuracy_values"
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		
+		<ListPreference android:title="@string/fallbackOptions_title"
+			android:summary="@string/fallbackOptions_summary" android:key="@string/fallbackOptions_key"
+			android:defaultValue="@string/fallbackOptions_default" android:entries="@array/fallbackOptions_entries"
+			android:entryValues="@array/fallbackOptions_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		
+		<CheckBoxPreference android:title="@string/min_accuracy_title"
+			android:defaultValue="true" android:summary="@string/min_accuracy_summary"
+			android:key="@string/min_accuracy_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

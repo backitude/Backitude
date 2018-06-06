@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+	<PreferenceCategory android:title="@string/category_offlineSync_settings"
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+
+		<CheckBoxPreference android:title="@string/offlineSync_enabled_title"
+			android:defaultValue="false" android:summary="@string/offlineSync_enabled_summary"
+			android:key="@string/offlineSync_enabled_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		
+		<ListPreference android:title="@string/offlineSync_syncOptions_title"
+			android:summary="@string/offlineSync_syncOptions_summary" android:key="@string/offlineSync_syncOptions_key"
+			android:defaultValue="@string/offlineSync_syncOptions_default" android:entries="@array/offlineSync_syncOptions_list"
+			android:entryValues="@array/offlineSync_syncOptions_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+
+		<CheckBoxPreference android:title="@string/offlineSync_toast_title"
+			android:defaultValue="true" android:summary="@string/offlineSync_toast_text"
+			android:key="@string/offlineSync_toast_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />	
+            
+		<CheckBoxPreference android:title="@string/offlineSync_delete_title"
+			android:defaultValue="true" android:summary="@string/offlineSync_delete_text"
+			android:key="@string/offlineSync_delete_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:enabled="false" />	
+	</PreferenceCategory>
+</PreferenceScreen>

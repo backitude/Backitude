@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+
+    <PreferenceCategory android:title="@string/category_sendfire" 
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/sendfire_enabled_key"
+            android:summary="@string/sendfire_enabled_text"
+            android:title="@string/sendfire_enabled_title" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+
+		<CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/sendback_enabled_key"
+            android:summary="@string/sendback_enabled_text"
+            android:title="@string/sendback_enabled_title" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+                
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/sendfire_msg_key"
+            android:summary="@string/sendfire_msg_text"
+            android:title="@string/sendfire_msg_title" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/sendfire_notif_key"
+            android:summary="@string/sendfire_notif_text"
+            android:title="@string/sendfire_notif_title" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/sendfire_secret_dialogTitle"
+            android:key="@string/sendfire_secret_key"
+            android:summary="@string/sendfire_secret_text"
+            android:title="@string/sendfire_secret_title" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

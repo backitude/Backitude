@@ -1,21 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="gaugler.backitude">
-
-    <application
+    package="gaugler.backitude" android:versionCode="40" android:versionName="0.9">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:required="false" android:name="android.hardware.telephony" />
+    <application android:icon="@drawable/mainlogo"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:label="@string/app_name" >
+        <activity android:name=".activity.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.Preferences"
+            android:label="@string/pref_set">
+        </activity>
+        <activity android:name=".activity.SystemPreferences"
+            android:label="@string/advanced_settings_title">
+        </activity>
+        <activity android:name=".activity.PollingPreferences"
+            android:label="">
+        </activity>
+        <activity android:name=".activity.RealtimePreferences"
+            android:label="">
+        </activity>
+        <activity android:name=".activity.WifiModePreferences"
+            android:label="">
+        </activity>
+        <activity android:name=".activity.UpdatePreferences"
+            android:label="">
+        </activity>
+        <activity android:name=".activity.AccuracyPreferences"
+            android:label="">
+        </activity>
+        <activity android:name=".activity.PushUpdatePreferences"
+            android:label="">
+        </activity>
+        <activity android:name=".activity.OfflinePreferences"
+            android:label="">
+        </activity>
+        <activity android:name=".activity.ServerPreferences"
+            android:label="@string/pref_set">
+        </activity>
+        <activity android:name=".activity.AccountActivity"
+            android:label="@string/account_screen">
+        </activity>
+        <activity android:name=".activity.ExtrasActivity"
+            android:label="@string/category_extras">
+        </activity>
+        <activity android:name=".activity.LastUpdateActivity"
+            android:label="@string/lastUpdate_title">
+        </activity>
+        <activity android:name=".activity.LastErrorActivity"
+            android:label="@string/lastError_title">
+        </activity>
+        <activity android:name=".activity.LastPushActivity"
+            android:label="@string/lastPush_title">
+        </activity>
+        <activity android:name=".widget.PushWidgetConfig"
+            android:label="@string/pushWidgetConfig_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".wakeful.MyWakefulService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name=".wakeful.MyWakefulService" />
+            </intent-filter>
+        </service>
+        <service android:name=".wakeful.ReSyncUpdateService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name=".wakeful.ReSyncUpdateService" />
+            </intent-filter>
+        </service>
+        <service android:name=".wakeful.OfflineLocationSyncService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name=".wakeful.OfflineLocationSyncService" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".listener.BatteryListener">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".listener.ConnectivityListener">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".listener.MyStartupIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".listener.PassiveLocationListener"
+            android:exported="false">
+            <intent-filter>
+                <action android:name=".listener.PassiveLocationListener" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".listener.PollingAlarm"
+            android:exported="false">
+            <intent-filter>
+                <action android:name=".listener.PollingAlarm" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".listener.ReSyncAlarm"
+            android:exported="false">
+            <intent-filter>
+                <action android:name=".listener.ReSyncAlarm" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".listener.SmsReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name=
+                    "android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".widget.OnOffWidget" android:label="@string/onOffWidgetText">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="ON_OFF_ACTION_WIDGET_UPDATE_FROM_ACTIVITY"/>
+                <action android:name="ON_OFF_ACTION_WIDGET_UPDATE_FROM_WIDGET"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/on_off_widget" />
+        </receiver>
+        <receiver android:name=".widget.FireWidget" android:label="@string/fireWidgetText">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="FIRE_ACTION_WIDGET_UPDATE_FROM_ACTIVITY"/>
+                <action android:name="FIRE_ACTION_WIDGET_UPDATE_FROM_WIDGET"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/fire_widget" />
+        </receiver>
+        <receiver android:name=".widget.RealtimeWidget" android:label="@string/realtimeWidgetText">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="REALTIME_ACTION_WIDGET_UPDATE_FROM_ACTIVITY"/>
+                <action android:name="REALTIME_ACTION_WIDGET_UPDATE_FROM_WIDGET"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/realtime_widget" />
+        </receiver>
+        <receiver android:name=".widget.PushWidget" android:label="@string/pushWidgetText">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="PUSH_ACTION_WIDGET_UPDATE_FROM_ACTIVITY"/>
+                <action android:name="PUSH_ACTION_WIDGET_UPDATE_FROM_WIDGET"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/push_widget" />
+        </receiver>
+        <receiver android:name=".listener.PreferenceChangeListener" android:label="PreferenceChange">
+            <intent-filter>
+                <action android:name="gaugler.backitude.SEND_INTENT_ACTION_CHANGE_SETTING"/>
+            </intent-filter>
+        </receiver>
     </application>
-
 </manifest>

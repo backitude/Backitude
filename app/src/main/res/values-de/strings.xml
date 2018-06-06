@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Backitude</string>
+    <string name="app_operations_title">Hintergrund-Updates für Google Latitude</string>
+    <string name="app_configure_title">Konfigurieren</string>
+    <string name="app_other_title">Sonstiges</string>
+    <string name="version">Version 4.1 (veröffentlicht Mai 2013)</string>
+    <string name="email">Melde einen Fehler: backitude.deutsch@gmail.com</string>
+
+    <string name="account_screen">Google Konto auswählen</string>
+
+    <string name="appEnabled_key">appEnabled</string>
+    <string name="appEnabled_title">Backitude einschalten</string>
+    <string name="appEnabled_summary">Hintergrunddienst ist deaktiviert</string>
+    <string name="appEnabled_summary_enabled">Hintergrunddienst ist aktiviert</string>
+
+    <string name="settings_key">settings</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_summary">Anwendungseinstellungen bearbeiten</string>
+
+    <string name="account_prefs_key">accountName</string>
+    <string name="account_prefs_title">Google Konto</string>
+    <string name="account_prefs_summary">Es ist kein aktueller Latitude-Nutzer gespeichert</string>
+
+    <string name="advanced_settings_key">advanced_settings</string>
+    <string name="advanced_settings_title">Erweiterte Einstellungen</string>
+    <string name="advanced_settings_summary">Bearbeite Android Standort- und WLAN-Einstellungen, Reihenfolge der Standort-Quellen, Wake lock Einstellungen</string>
+
+    <string name="extras_key">extras</string>
+    <string name="extras_title">Extras</string>
+    <string name="extras_summary">Updates auslösen, Manuelles Synchronisieren, Verlaufsdetails anzeigen</string>
+    
+    <string name="fire_key">runNow</string>
+    <string name="fire_title">Update auslösen</string>
+    <string name="fire_summary">Einmalige Standortbestimmung und Latitude-Aktualisierung durchführen</string>
+
+    <string name="send_fire_key">send_fire</string>
+    <string name="send_fire_title">Update eines Freundes</string>
+    <string name="send_fire_summary">Sende eine Aktualisierungsanfrage an einen Freund per SMS</string>
+
+    <string name="send_last_update_key">send_last_update</string>
+    <string name="send_last_update_title">Standort teilen</string>
+    <string name="send_last_update_summary">Einem Freund einen Maps-Link mit deinem letzten Standort senden</string>
+    
+    <string name="lastUpdate_key">lastUpdate</string>
+    <string name="lastUpdate_title">Letztes Update anzeigen</string>
+    <string name="lastUpdate_summary">Zeige Details der letzten Latitude-Aktualisierung</string>
+    <string name="lastUpdate_dialog">Details der letzten Latitude-Aktualisierung</string>
+
+    <string name="lastError_key">lastError</string>
+    <string name="lastError_title">Fehlerhistorie anzeigen</string>
+    <string name="lastError_summary">Zeige Details der zuletzt aufgetretenen Fehler</string>
+    <string name="lastError_dialog">Details der letzten Fehler</string>
+
+    <string name="lastPush_key">lastPush</string>
+    <string name="lastPush_title">Verlauf der Aktualisierungsanfragen anzeigen</string>
+    <string name="lastPush_summary">Zeige Details der letzten Aktualisierungsanfragen</string>
+    <string name="lastPush_dialog">Details der letzten Aktualisierungsanfragen</string>
+
+    <string name="faq_key">faq</string>
+    <string name="faq_title">FAQ</string>
+    <string name="faq_summary">Häufig gestellte Fragen</string>
+
+    <string name="donateTo_key">donateTo</string>
+    <string name="donateTo_title">Spende an den Entwickler</string>
+    <string name="donateTo_link">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=VZMLTNTLF6DYE</string>
+
+    <string name="about_key">about</string>
+    <string name="about_title">Über Backitude</string>
+    <string name="about_summary">Über Backitude</string>
+    <string name="about_intro">Diese Anwendung versucht, die Möglichkeiten und Genauigkeit deines Google Latitude Standorts zu erweitern. Google Latitude auf Android Geräten wird kein GPS benutzen, um deinen Standort aktuell und genau zu halten.</string>
+    <string name="about_description1">Backitude ist ein Hintergrunddienst, der deinen aktuellen Standort in einem festgelegten Zeitintervall bestimmt und dabei GPS, WLAN und/oder Funkmast-Trianulation benutzt.</string>
+    <string name="about_description2">Wenn eine genaue Messung erfolgt ist, wird die Anwendung Google Latitude nutzen, um deinen Standort für deine Freunde aktuell und genau zu halten.</string>
+
+    <string name="exit_title">Verlassen</string>
+
+    <string name="pref_set">Einstellungen</string>
+    <string name="category_polling">Optionen Standortabfrage</string>
+    <string name="category_standard">Abfrageoptionen Standard-Modus</string>
+    <string name="category_realtime">Abfrageoptionen Dock-Modus</string>
+    <string name="category_wifi_mode">Abfrageoptionen WLAN-Modus</string>
+    <string name="category_update">Latitude Aktualisierungsoptionen</string>
+    <string name="category_sendfire">Aktualisierungsanfragen per SMS</string>
+    <string name="category_additional">Erweiterte Einstellungen</string>
+    <string name="category_system_settings">Android System-Einstellungen</string>
+    <string name="category_location">Standortabfragequellen</string>
+    <string name="category_sleep_mode">Einstellungen Schlafmodus</string>
+    <string name="category_offlineSync_settings">Einstellungen Offline Standortspeicherung und Synchronisation</string>
+    <string name="category_extras">Backitude Extras</string>
+    <string name="category_update_extras">Aktualisierungsfunktionen</string>
+    <string name="category_offlineSync_extras">Funktionen Offline-Speicherung und Synchronisation</string>
+    <string name="category_view_extras">Zeige Verlaufsdetails</string>
+    <string name="category_min_accuracy">Einstellungen Standortgenauigkeit</string>
+
+    <string name="polling_settings_key">polling_settings</string>
+    <string name="polling_settings_title">Einstellungen Standard-Modus</string>
+    <string name="polling_settings_summary">Bearbeite Abfrageeinstellungen, die das Standard-Anwendungsverhalten im Hintergrund betreffen</string>
+
+    <string name="interval_key">interval</string>
+    <string name="interval_title">Zeitintervall</string>
+    <string name="interval_summary">Die Häufigkeit mit der der aktuelle Standort bestimmt wird und Latitude aktualisiert wird</string>
+    <string name="interval_default">1800000</string>
+
+    <string name="timeout_interval_key">timeout_interval</string>
+    <string name="timeout_interval_title">Zeitüberschreitung der Standortabfrage</string>
+    <string name="timeout_interval_summary">Maximale Zeit zur Bestimmung des Standorts. Standortbestimmung wird abgebrochen wenn eine genaue Position ermittelt wurde oder eine Zeitüberschreitung eintritt (schont den Akku)</string>
+    <string name="timeout_default">15000</string>
+
+    <string name="gpsOption_key">gpsOption</string>
+    <string name="gpsOption_title">Priorität festlegen</string>
+    <string name="gpsOption_summary">Spare Strom durch Abbruch der GPS-Suche, wenn ein WLAN-Standort bestimmt wurde. Oder schalte GPS-Benutzung komplett ab.</string>
+    <string name="gpsOption_default">1</string>
+
+    <string name="update_settings_key">update_settings</string>
+    <string name="update_settings_title">Aktualisierungseinstellungen</string>
+    <string name="update_settings_summary">Bearbeite allgemeine Aktualisierungseinstellungen der Anwendung</string>
+    
+    <string name="update_interval_key">resync_interval</string>
+    <string name="update_interval_title">Latitude Erneuerungshäufigkeit</string>
+    <string name="update_interval_default">0</string>
+    <string name="update_interval_summary">Häufigkeit, mit der der letzte gefundene Standort an Latitude übermittelt wird, zusätzlich zu regulären Aktualisierungen. (Um Überschreiben durch Latitude zu verhindern oder die Beschränkung der minimalen Entfernung zu umgehen)</string>
+
+    <string name="min_distance_key">minimum_distance</string>
+    <string name="min_distance_title">Mindeständerung der Entfernung</string>
+    <string name="min_distance_default">0</string>
+    <string name="min_distance_summary">Latitude Standort wird nicht aktualisiert, wenn nicht mindestens diese Entfernung seit der letzten Aktualisierung zurückgelegt wurde.</string>
+
+    <string name="steals_enabled_key">steals_enabled</string>
+    <string name="steals_enabled_title">Standort-Diebstahl</string>
+    <string name="steals_enabled_summary">Wenn eine andere Anwendung deine Position genau bestimmt, wird Backitude diesen &quot;klauen&quot; und Latitude aktualisieren. Ein erfolgreichen &quot;Diebstahl&quot; wird auch den Aktualisierungsintervall zurücksetzen.</string>
+
+	<string name="max_steals_interval_key">max_steals_interval</string>
+	<string name="max_steals_interval_title">Maximale Diebstahl-Häufigkeit</string>
+	<string name="max_steals_interval_summary">Maximale Diebstahl-Häufigkeit</string>
+	<string name="max_steals_interval_default">60000</string>
+	
+    <string name="accuracy_settings_key">accuracy_settings</string>
+    <string name="accuracy_settings_title">Einstellungen Genauigkeit</string>
+    <string name="accuracy_settings_summary">Bearbeite Einstellungen zur Genauigkeit der Standortbestimmung</string>
+
+    <string name="fallbackOptions_key">fallbackOptions</string>
+    <string name="fallbackOptions_title">Alternativverhalten</string>
+    <string name="fallbackOptions_summary">Legt fest, was zu unternehmen ist, wenn die notwendige Minimalgenauigkeit bei der Standortbestimmung nicht erreicht wird</string>
+    <string name="fallbackOptions_default">1</string>
+
+    <string name="fallbackOptions_1">Benutze den genauesten Standort der ermittelt werden konnte oder wiederhole den vorhergehenden, wenn kein neuer Standort bestimmt werden konnte.</string>
+    <string name="fallbackOptions_2">Benutze den genauesten Standort der ermittelt werden konnte, aber aktualisiere nicht, wenn kein neuer Standort bestimmt werden konnte.</string>
+    <string name="fallbackOptions_3">Wenn kein neuer Standort gefunden werden konnte oder dieser nicht die Minimalgenauigkeit erfüllt, wiederhole den vorhergehenden.</string>
+    <string name="fallbackOptions_4">Wenn kein neuer Standort gefunden werden konnte oder dieser nicht die Minimalgenauigkeit erfüllt, dann aktualisiere überhaupt nicht.</string>
+
+    <string name="min_accuracy_key">min_accuracy</string>
+    <string name="min_accuracy_title">Letzten Standort wiederverwenden</string>
+    <string name="min_accuracy_summary">Wenn ein neuer Standort weniger genau ist wie der letzte und der letzte Standort innerhalb der Grenze des neues Standorts liegt, wird Backitude den neuen Standort nicht berücksichtigen.</string>
+
+    <string name="realtime_settings_key">realtime_settings</string>
+    <string name="realtime_settings_title">Dock-Modus Einstellungen</string>
+    <string name="realtime_settings_summary">Bearbeite Abfrageeinstellungen, die gelten, wenn ein Ladegerät angeschlossen ist</string>
+
+    <string name="realtime_key">realtime</string>
+    <string name="realtime_title">Dock-Modus aktiviert</string>
+    <string name="realtime_text">Wenn ein Ladegerät angeschlossen und GPS aktiviert ist, wird die Anwendung automatisch zu den Abfrageintervallen des Dock-Modus wechseln und zurückschalten, wenn das Ladekabel abgezogen wird.</string>
+
+    <string name="realtime_interval_key">realtime_interval</string>
+    <string name="realtime_interval_title">Zeitintervall</string>
+    <string name="realtime_interval_summary">Die Häufigkeit mit der der aktuelle Standort bestimmt wird und Latitude aktualisiert wird wenn der Dock-Modus eingeschaltet ist</string>
+    <string name="realtime_interval_default">15000</string>
+
+    <string name="realtime_timeout_interval_key">realtime_timeout_interval</string>
+    <string name="realtime_timeout_interval_title">Zeitüberschreitung der Standortabfrage</string>
+    <string name="realtime_timeout_interval_summary">Maximale Zeit zur Bestimmung des Standorts im Dock-Modus. Standortbestimmung wird abgebrochen wenn eine genaue Position ermittelt wurde oder eine Zeitüberschreitung eintritt</string>
+    <string name="realtime_timeout_interval_default">15000</string>
+
+    <string name="wifi_mode_settings_key">wifi_mode_settings</string>
+    <string name="wifi_mode_settings_title">WLAN-Modus Einstellungen</string>
+    <string name="wifi_mode_settings_summary">Bearbeite Abfrageeinstellungen, die gelten, wenn du mit einem WLAN verbunden bist.</string>
+
+    <string name="wifi_mode_key">wifi_mode</string>
+    <string name="wifi_mode_title">WLAN-Modus aktiviert</string>
+    <string name="wifi_mode_text">Wenn du mit einem WLAN verbunden bist, wird die Anwendung automatisch zu den Abfrageintervallen des WLAN-Modus wechseln und zurückschalten, wenn die Verbindung zum WLAN getrennt wird.</string>
+
+    <string name="wifi_mode_interval_key">wifi_mode_interval</string>
+    <string name="wifi_mode_interval_title">Zeitintervall</string>
+    <string name="wifi_mode_interval_summary">Die Häufigkeit mit der der aktuelle Standort bestimmt wird und Latitude aktualisiert wird wenn der WLAN-Modus eingeschaltet ist.</string>
+    <string name="wifi_mode_interval_default">3600000</string>
+
+    <string name="wifi_mode_timeout_interval_key">wifi_mode_timeout_interval</string>
+    <string name="wifi_mode_timeout_interval_title">Zeitüberschreitung der Standortabfrage</string>
+    <string name="wifi_mode_timeout_interval_summary">Maximale Zeit zur Bestimmung des Standorts im WLAN-Modus. Standortbestimmung wird abgebrochen wenn eine genaue Position ermittelt wurde oder eine Zeitüberschreitung eintritt</string>
+    <string name="wifi_mode_timeout_interval_default">15000</string>
+    
+    <string name="push_settings_key">push_settings</string>
+    <string name="push_settings_title">Einstellungen zu Aktualisierungsanfragen</string>
+    <string name="push_settings_summary">Bearbeite Einstellungen, um Aktualisierungsanfragen von anderen per SMS zu bekommen</string>
+
+    <string name="sendfire_enabled_key">sendfire_enabled</string>
+    <string name="sendfire_enabled_title">Anfragen aktiviert</string>
+    <string name="sendfire_enabled_text">Anderen erlauben dir automatisch per SMS eine Nachricht zu schicken, die eine Standortaktualisierung auslöst</string>
+
+    <string name="sendfire_msg_key">sendfire_msg</string>
+    <string name="sendfire_msg_title">Zeige Meldung</string>
+    <string name="sendfire_msg_text">Eine Meldung wird auf dem Bildschirm angezeigt, wenn eine Aktualisierunganfrage von einem Freund eingetroffen ist</string>
+
+    <string name="sendfire_notif_key">sendfire_notif</string>
+    <string name="sendfire_notif_title">Zeige Benachrichtung</string>
+    <string name="sendfire_notif_text">Zeige eine Meldung in der Benachrichtigungsleiste, wenn eine Aktualisierunganfrage von einem Freund eingetroffen ist</string>
+
+    <string name="sendfire_secret_key">sendfire_secret</string>
+    <string name="sendfire_secret_title">Geheimes Suffix</string>
+    <string name="sendfire_secret_text">Eine geheime Zeichenfolge am Ende der eingehenden Aktualisierungsanfrage ist notwendig, um unerwünschte Anfragen unbekannter Nutzer zu verhindern. Setze die Zeichenfolge hier und teile sie deinen Freunden mit. (z.B. "Forceer Backitude Bijwerking12345")</string>
+    <string name="sendfire_secret_dialogTitle">Bitte ein geheimes Suffix eingeben</string>
+    <string name="FORCE_BACKITUDE_UPDATE">Forceer Backitude Bijwerking</string>
+
+    <string name="statusBar_key">statusBar</string>
+    <string name="statusBar_title">Symbol in der Benachrichtungsleiste</string>
+    <string name="statusBar_summary">Zeige ein Symbol in der Benachrichtigungsleiste am oberen Bildschirmrand.</string>
+    <string name="statusBar_default">2</string>
+
+    <string name="update_toast_key">update_toast</string>
+    <string name="update_toast_title">Zeige Meldung bei Aktualisierung</string>
+    <string name="update_toast_text">Nach der Standortabfrage und der Google Latitude-Aktualisierung wird auf dem Bildschirm eine Meldung angezeigt.</string>
+
+    <string name="display_error_key">display_error</string>
+    <string name="display_error_title">Zeige Fehlermeldungen</string>
+    <string name="display_error_text">Wenn ein Fehler auftritt wird eine Meldung in der Benachrichtigungsleiste angezeigt.</string>
+
+    <string name="loc_sys_settings_key">loc_sys_settings</string>
+    <string name="loc_sys_settings_title">System Standorteinstellungen</string>
+    <string name="GPS_on">GPS Standortbestimmung ist aktuell eingeschaltet.</string>
+    <string name="NetworkLoc_on">Funkmast-/WLAN-Standortbestimmung ist aktuell eingeschaltet.</string>
+    <string name="GPS_NetworkLoc_on">GPS- und Funkmast-/WLAN-Standortbestimmung ist aktuell eingeschaltet.</string>
+    <string name="GPS_NetworkLoc_off">Alle Dienste zur Standortbestimmung sind aktuell ausgeschaltet, die Anwendung wird so nicht funktionieren.</string>
+
+    <string name="minGpsAccuracy_key">minGpsAccuracy</string>
+    <string name="minGpsAccuracy_title">Minimale GPS-Genauigkeit</string>
+    <string name="minGpsAccuracy_summary">Die Standortbestimmung findet so lang statt, bis diese Mindestgenauigkeit erreicht ist oder eine Zeitüberschreitung eintritt.</string>
+    <string name="minGpsAccuracy_default">6</string>
+    
+    <string name="minWifiAccuracy_key">minWifiAccuracy</string>
+    <string name="minWifiAccuracy_title">Minimale WLAN-Genauigkeit</string>
+    <string name="minWifiAccuracy_summary">Die Standortbestimmung findet so lang statt, bis diese Mindestgenauigkeit erreicht ist oder eine Zeitüberschreitung eintritt.</string>
+    <string name="minWifiAccuracy_default">100</string>
+
+    <string name="wifi_sys_title">System WLAN-Einstellungen</string>
+    <string name="wifi_sys_key">wifi_sys</string>
+    <string name="Wifi_sys_on">WLAN ist aktiviert… die netzbasierte Standortbestimmung wird dadurch genauer.</string>
+    <string name="Wifi_sys_off">WLAN ist deaktiviert… bei Bedarf einschalten, um genauere netzbasierte Standortbestimmung zu ermöglichen.</string>
+
+    <string name="wake_lock_key">wake_lock</string>
+    <string name="wake_lock_title">Wake Lock aktiviert</string>
+    <string name="wake_lock_summary">Wecke das System zur Standortbestimmung und -aktualisierung, wenn sich das Telefon im Schlafmodus befindet (nach der Aktualisierung wird das System wieder in den Schlafmodus wechseln)</string>
+
+    <string name="wifi_lock_key">wifi_lock</string>
+    <string name="wifi_lock_title">WLAN Lock aktiviert</string>
+    <string name="wifi_lock_summary">Wecke die WLAN-Verbindung zur Standortbestimmung und -aktualisierung, wenn sich das Telefon im Schlafmodus befindet (nach der Aktualisierung wird die WLAN-Verbindung wieder in den Schlafmodus wechseln)</string>
+	<string name="wifi_lock_connecting">Wecke die WLAN-Verbindung zur Standortbestimmung und -aktualisierung, wenn sich das Telefon im Schlafmodus befindet (nach der Aktualisierung wird die WLAN-Verbindung wieder in den Schlafmodus wechseln)</string>
+    
+    <string name="offline_settings_key">offline_settings</string>
+    <string name="offline_settings_title">Offline-Speichereinstellungen</string>
+    <string name="offline_settings_summary">Bearbeite die Einstellungen zur Offline-Speicherung</string>
+
+    <string name="offlineSync_enabled_key">offline_sync</string>
+    <string name="offlineSync_enabled_title">Offline-Speicherung aktiviert</string>
+    <string name="offlineSync_enabled_summary">Speichere Standortdaten auf dem Telefon, wenn keine Datenverbindung besteht. Diese können zu einem späteren Zeitpunkt zu Google Latitude geschickt werden.</string>
+
+    <string name="offlineSync_syncOptions_key">syncOptions</string>
+    <string name="offlineSync_syncOptions_title">Sync Optionen</string>
+    <string name="offlineSync_syncOptions_summary">Wähle, wann die Anwendung offline gespeicherte Standortdaten mit Google Latitude synchronisieren soll</string>
+    <string name="offlineSync_syncOptions_default">3</string>
+
+    <string name="wifiOnly_enabled_key">wifiOnly_enabled</string>
+    <string name="wifiOnly_enabled_title">Nur im WLAN</string>
+    <string name="wifiOnly_enabled_summary">Aktualisiere Google Latitude nur wenn eine WLAN-Verbindung besteht.</string>
+
+    <string name="offlineSync_toast_key">offlineSync_toast</string>
+    <string name="offlineSync_toast_title">Zeige Sync Meldung</string>
+    <string name="offlineSync_toast_text">Nachdem offline gespeicherte Daten hochgeladen wurden wird eine Meldung auf dem Bildschirm angezeigt.</string>
+    
+    <string name="offlineSync_sync_key">manual_offline_sync</string>
+    <string name="offlineSync_sync_title">Sync Offline Standortdaten</string>
+    <string name="offlineSync_sync_summary">Sendet offline gespeicherte Standortdaten zu Latitude für den Standortverlauf.  Gespeicherte Werte werden bei erfolgreicher Übertragung an Google lokal gelöscht.</string>
+    <string name="offlineSync_sync_summary1">Sendet offline gespeicherte Standortdaten zu Latitude für den Standortverlauf.  Gespeicherte Werte werden bei erfolgreicher Übertragung an Google lokal gelöscht. (Es existieren Einträge)</string>
+    <string name="offlineSync_sync_summary2">Sendet offline gespeicherte Standortdaten zu Latitude für den Standortverlauf.  Gespeicherte Werte werden bei erfolgreicher Übertragung an Google lokal gelöscht. (Keine Einträge vorhanden)</string>
+    
+    <string name="offlineSync_clear_key">clear_offline_history</string>
+    <string name="offlineSync_clear_title">Lösche Offline Standortdaten</string>
+    <string name="offlineSync_clear_summary">Löscht die offline gespeicherten Standortdaten</string>
+    
+    <string name="PERFORMING_SYNC_MSG">Sync wird ausgeführt…</string>
+    <string name="SYNC_DIALOG_MSG">Sende offline gespeicherte Standortdaten an Google Latitude</string>
+
+    <string name="onOffWidgetText">Backitude: An/Aus</string>
+    <string name="fireWidgetText">Backitude: Los</string>
+    <string name="realtimeWidgetText">Backitude: Dock</string>
+    <string name="pushWidgetText">Backitude: Anfrage</string>
+    <string name="pushWidgetConfig_title">Aktualisierungsanfrage-Widget Konfiguration</string>
+    <string name="pushWidgetConfig_text">Eine Nummer eines Kontakts kann jedem Widget zugewiesen werden oder kann ausgelassen werden, um diese nach Aktivierung einzugeben</string>
+
+    <string name="ACCOUNT_SELECTION">Google-Konto wählen</string>
+    <string name="CURRENT_ACCOUNT_SELECTED">Aktuelle Auswahl:</string>    
+    <string name="NO_CURRENT_ACCOUNT_SELECTED">Kein aktuelles Latitude-Konto gespeichert</string>
+   	<string name="LATITUDE_LAUNCH_WIDGET_TITLE">Wähle Latitude-Konto mittels Mailadresse (beta)</string>
+
+    <string name="APP_STOPPED">Die Anwendung wurde gestoppt.</string>
+    <string name="TOKEN_REFRESH">Hole Authentifizierungsschlüssel.</string>
+    <string name="LOC_SERVICE_RUNNING">Der Standortaktualisierungsdienst läuft eventuell bereits.</string>
+
+    <string name="STEALS_ONLY_MESSAGE_1">Standort-Diebstahl und -Erneuerung werden so lange durchgeführt, wie sie aktiviert sind.</string>
+    <string name="STEALS_ONLY_MESSAGE_2">Standort-Diebstahl wird weiterhin passieren, so lang die Anwendung aktiv ist</string>
+    <string name="STEALS_ONLY_MESSAGE_3">Dieser Modus kann benutzt werden um Strom zu sparen</string>
+    <string name="STEALS_ONLY_MESSAGE_4">Standort-Erneuerung wird weiterhin passieren, so lang die Anwendung aktiv ist</string>
+    <string name="STEALS_ONLY_MESSAGE_5">Dieser Modus wird benutzt, um die letzte Position zu wiederholen und zu verhindern, dass die Position als inaktiv betrachtet wird</string>
+    <string name="BAD_CONFIG">Backitude kann mit dieser Konfiguration nicht funktionieren.</string>
+	<string name="STEALS_BUFFER_RATE">Achtung! Diebstähle funktionieren nur, wenn die Pufferhäufigkeit schneller ist als die Abfragehäufigkeit.</string>
+    <string name="ENFORCE_ACCURACY">Wiederholt die letzte Standortaktualisierung wenn sie genauer ist und in dem Bereich des Standortes liegt</string>
+
+    <string name="SUCCESS">Latitude Standort aktualisiert!</string>
+    <string name="LAST_UPDATE_NA">Keine letzte Aktualisierung</string>
+    <string name="NO_PUSH_HISTORY">Keine Anfragen-Historie</string>
+
+    <string name="POLLING_NOTIFICATION">Anwendung führt gerade eine Standortbestimmung aus.</string>
+    <string name="RUNNING_NOTIFICATION">Anwendung läuft momentan.</string>
+    <string name="REALTIME_NOTIFICATION">Aktualisierungsintervall des Dock-Modus ist gerade aktiv.</string>
+    <string name="STATUS_BAR_TITLE">Backituden</string>
+    <string name="STATUS_BAR_MODE1">Abfrageoptionen Standard-Modus</string>
+	<string name="STATUS_BAR_MODE2">Abfrageoptionen WLAN-Modus</string>
+	<string name="STATUS_BAR_MODE3">Abfrageoptionen Dock-Modus</string>
+    <string name="WARNING_NOTIFICATION">Backitude hat eine Aktualisierung verpasst. Bitte erneut versuchen. Sollte Problem fortbestehen, Entwickler kontaktieren.</string>
+    <string name="PERMISSION_NOTIFICATION_403">Zugriff verweigert. Sollte es Aktualisierungsprobleme geben, melde dich bei Latitude mit dem PC-Browser an. Ein \"opt in\" und eine Zustimmung der Bestimmungen ist notwendig. Ebenso musst du dich in der Maps-Anwendung einloggen und Latitude aktivieren. Entschuldige die Unannehmlichkeiten.</string>
+	<string name="PERMISSION_NOTIFICATION_403B">Tägliches Aktualisierungslimit für alle Nutzer wurde überschritten bis 12:00AM EST(US). </string>
+    <string name="PERMISSION_NOTIFICATION_503">Der Dienst kann aus unbekannten Gründen nicht erreichbar sein. Es kann eine temporäre Störung in der Kommunikation mit Google-Servern vorliegen. Google kann ggf. auch seine Lizenzbedingungen ändern, was zu einem 503 führt. Wenn das Problem weiterhin besteht ist es ratsam, zuerst Latitude vom PC-Browser aufzurufen.  Zusätzlich logge dich erneut in Latitude in der Maps-Anwendung deines Telefons ein.  Das wird helfen, erneut eine Verbindung zu deinem Konto herzustellen. Wenn das alles nicht hilft kannst du versuchen, Backitude zu deinstallieren, dein Telefon neu zu starten und Backitude erneut zu installieren.</string>
+    <string name="UPDATE_REQUEST_SENT">Aktualisierung ausgelöst</string>
+    
+    <string name="APP_NAME">Backitude</string>
+        
+    <string name="LAST_UPDATE_LOC_TIME">Standortzeit:</string>
+    <string name="LAST_UPDATE_TIME">Letzte Aktualisierung:</string>
+    <string name="LAST_UPDATE_LAT">Breitengrad:</string>
+    <string name="LAST_UPDATE_LONG">Längengrad:</string>
+    <string name="LAST_UPDATE_ACCUR">Genauigkeit:</string>
+    <string name="LAST_UPDATE_SPEED">Beschleunigen:</string>
+    <string name="LAST_UPDATE_TYPE">Typ:</string>
+
+    <string name="ERROR_LABEL">Fehler:</string>
+    <string name="ERROR_TS_LABEL">Zeitstempel:</string>
+        
+    <string name="LAST_PUSH_HISTORY">Anfrage von: </string>
+    <string name="PUSH_NOTIF">Aktualisierungsanfrage (empfangen)</string>
+    <string name="PERMISSION_DENIED">Zugriff verweigert</string>
+    <string name="REFRESH_DENIED">Schlüsselaktualisierung verweigert.</string>
+    
+    <string name="NO_UPDATE_NO_RECORDS">Backitude hat alle Offline-Daten zu Google geladen.</string>
+    <string name="NO_UPDATE_NO_NETWORK">Aktualisierung kann diesmal nicht durchgeführt werden. Kein Mobilfunknetz verfügbar</string>
+    <string name="NO_UPDATE_NO_ACCOUNT">Aktualisierung kann diesmal nicht durchgeführt werden. Es wurde kein Benutzerkonto konfiguriert</string>
+    <string name="NO_UPDATE_NO_WIFI">Aktualisierung kann diesmal nicht durchgeführt werden. Keine WLAN-Verbindung verfügbar, obwohl WLAN-Modus aktiv. Aktiviere Offline Speicherung um die Daten später zu senden.</string>
+    <string name="NO_FIRE_NO_NETWORK">Aktualisierung kann diesmal nicht durchgeführt werden. Kein Mobilfunknetz verfügbar</string>
+    <string name="NO_FIRE_NO_WIFI">Aktualisierung kann diesmal nicht durchgeführt werden. Keine WLAN-Verbindung verfügbar, obwohl WLAN-Modus aktiv. Aktiviere Offline Speicherung um die Daten später zu senden.</string>
+    <string name="NO_FIRE_NO_PROVIDER">Aktualisierung kann diesmal nicht durchgeführt werden. (Kein konfigurierter Dienst zur Standortbestimmung ist verfügbar)</string>
+    <string name="NO_FIRE_NO_ACCOUNT">Aktualisierung kann diesmal nicht durchgeführt werden. (Konto unbekannt)</string>
+    <string name="NO_POLL_NO_NETWORK">Abfrage kann diesmal nicht durchgeführt werden. Kein Mobilfunknetz verfügbar</string>
+    <string name="NO_POLL_NO_WIFI">Abfrage kann diesmal nicht durchgeführt werden. Keine WLAN-Verbindung verfügbar, obwohl WLAN-Modus aktiv. Aktiviere Offline Speicherung um die Daten später zu senden.</string>
+    <string name="NO_LOCATION_PROVIDERS_ENABLED">Keine Dienste zur Standortbestimmung aktiviert. (Backitude wird deaktiviert)</string>
+	<string name="NO_LOCATION_PROVIDERS_DESC">Keine Dienste zur Standortbestimmung aktiviert. (Backitude wird deaktiviert)</string>
+    <string name="NO_ENABLE_NO_PROVIDER">Kann Hintergrunddienst nicht starten. (Kein konfigurierter Dienst zur Standortbestimmung ist verfügbar)</string>
+    <string name="NO_ENABLE_NO_ACCOUNT">Kann Hintergrunddienst nicht starten. (Konto unbekannt)</string>
+
+    <string name="UPDATE_FAILED_403">Aktualisierung fehlgeschlagen. (Zugriff verweigert)</string>
+    <string name="UPDATE_FAILED">Aktualisierung fehlgeschlagen.</string>
+    <string name="LOCATION_STORED">Standort zur späteren Synchronisierung zwischengespeichert.</string>
+    <string name="TOKEN_REFRESH_FAILED">Fehler beim Aktualisieren des Authentifizierungsschlüssels.</string>
+
+    <string name="SMS_REQUIRED">SMS sind notwendig, um deine Backitude-Freunde zu erreichen. Auf einem Tablet oder Gerät ohne SMS-Funktionalität, versuche ihnen eine Text-eMail mit dem Text \"Force Backitude Update\" zu senden, um diese Funktion zu nutzen.</string>
+    <string name="CONTACT_DEV">Bitte im Error-Log nachschauen oder Entwickler kontaktieren.</string>
+    <string name="TRY_AGAIN_LATER">Bitte später nochmal versuchen oder Entwickler kontaktieren.</string>
+    <string name="DATABASE_ERROR">Es gibt ein Problem beim Zugriff auf die Datenbank.</string>
+    
+    <string name="ARE_YOU_SURE">Bist du sicher?</string>
+    <string name="YES">Ja</string>
+    <string name="NO">Nein</string>
+    
+    <string name="SHARE_LOCATION_SUBJECT">Mein aktueller Standort</string>
+    <string name="SHARE_TITLE">Teile deinen Standort</string>
+    <string name="SHARE_LOCATION_BODY">Hier ist ein Link zu meinem Standort: </string>
+    <string name="SHARE_LOCATION_BODY_2">(Zur Verfügung gestellt von Backitude, kostenlos im Google Play Store)</string>
+    <string name="NO_WAY_TO_SHARE">Keine Anwendungen verfügbar, um den Standort zu teilen.</string>
+    <string name="NO_LOCATION_TO_SHARE">Keine Standortdaten verfügbar zum Teilen.</string>
+    
+    <string name="UPDATE_TYPE_POLL">Abfrage</string>
+    <string name="UPDATE_TYPE_RESYNC">Erneuerung</string>
+    <string name="UPDATE_TYPE_STEAL">Diebstahl</string>
+    <string name="UPDATE_TYPE_FIRE">Manuell</string>
+    <string name="UPDATE_TYPE_OFFLINE_SYNC">Offline Storage</string>
+    <string name="UPDATE_TYPE_MANUAL">Handbuch</string>
+    
+    <string name="push_update_widget_text">(default)</string>
+    <string name="push_update_widget_button1">Weisen Sie ein Konto</string>
+    <string name="push_update_widget_button2">Überspringen</string>
+
+	<string name="seconds">Sekunden</string>
+	<string name="minute">Minute</string>
+	<string name="minutes">Minuten</string>
+	<string name="hour">Stunde</string>
+	<string name="hours">Stunden</string>
+	<string name="none">Keine</string>
+</resources>

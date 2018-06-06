@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+	<PreferenceCategory android:title="@string/category_update"
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+	    
+		<CheckBoxPreference android:title="@string/steals_enabled_title"
+			android:defaultValue="false" android:summary="@string/steals_enabled_summary"
+			android:key="@string/steals_enabled_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+
+		<ListPreference android:title="@string/max_steals_interval_title"
+			android:summary="@string/max_steals_interval_summary" android:key="@string/max_steals_interval_key"
+			android:defaultValue="@string/max_steals_interval_default" android:entries="@array/max_steals_interval_list"
+			android:entryValues="@array/max_steals_interval_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+
+		<ListPreference android:title="@string/min_distance_title"
+			android:summary="@string/min_distance_summary" android:key="@string/min_distance_key"
+			android:defaultValue="@string/min_distance_default" android:entries="@array/min_distance_list"
+			android:entryValues="@array/min_distance_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+			
+		<ListPreference android:title="@string/update_interval_title"
+			android:summary="@string/update_interval_summary" android:key="@string/update_interval_key"
+			android:defaultValue="@string/update_interval_default"
+			android:entries="@array/update_interval_list" android:entryValues="@array/update_interval_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+						
+		<CheckBoxPreference android:title="@string/wifiOnly_enabled_title"
+			android:defaultValue="false" android:summary="@string/wifiOnly_enabled_summary"
+			android:key="@string/wifiOnly_enabled_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		
+	</PreferenceCategory>
+</PreferenceScreen>

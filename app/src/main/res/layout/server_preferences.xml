@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <PreferenceCategory
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:title="@string/category_server_settings" >
+
+        <Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/test_connection_title" android:summary="@string/test_connection_summary"
+			android:key="@string/test_connection_key" />
+        		
+        <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_url_default"
+            android:key="@string/server_url_key"
+            android:summary="@string/server_url_summary"
+            android:title="@string/server_url_title" 
+            android:inputType="textEmailAddress"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:title="@string/category_server_parameters" >
+
+        <ListPreference android:title="@string/authentication_title"
+			android:summary="@string/authentication_summary" android:key="@string/authentication_key"
+			android:defaultValue="@string/authentication_default" android:entries="@array/authentication_entries"
+			android:entryValues="@array/authentication_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+        
+        <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue=""
+            android:key="@string/server_user_name_key"
+            android:summary="@string/server_user_name_summary"
+            android:title="@string/server_user_name_title" />
+
+        <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue=""
+            android:key="@string/server_password_key"
+            android:summary="@string/server_password_summary"
+            android:title="@string/server_password_title"
+            android:inputType="textPassword" />
+
+        <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue=""
+            android:key="@string/server_uid_key"
+            android:summary="@string/server_uid_summary"
+            android:title="@string/server_uid_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:title="@string/category_server_keys" >
+        
+        <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_username_default"
+            android:key="@string/server_key_username_key"
+            android:title="@string/server_key_username_title" />
+        
+        <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_password_default"
+            android:key="@string/server_key_password_key"
+            android:title="@string/server_key_password_title" />
+        
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_latitude_default"
+            android:key="@string/server_key_latitude_key"
+            android:title="@string/server_key_latitude_title" />
+       
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_longitude_default"
+            android:key="@string/server_key_longitude_key"
+            android:title="@string/server_key_longitude_title" />
+                
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_accuracy_default"
+            android:key="@string/server_key_accuracy_key"
+            android:title="@string/server_key_accuracy_title" />
+       
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_speed_default"
+            android:key="@string/server_key_speed_key"
+            android:title="@string/server_key_speed_title" />
+       
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_altitude_default"
+            android:key="@string/server_key_altitude_key"
+            android:title="@string/server_key_altitude_title" />
+            
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_bearing_default"
+            android:key="@string/server_key_bearing_key"
+            android:title="@string/server_key_bearing_title" />
+              
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_loc_timestamp_default"
+            android:key="@string/server_key_loc_timestamp_key"
+            android:title="@string/server_key_loc_timestamp_title" />
+              
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_req_timestamp_default"
+            android:key="@string/server_key_req_timestamp_key"
+            android:title="@string/server_key_req_timestamp_title" />
+       
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_uid_default"
+            android:key="@string/server_key_uid_key"
+            android:title="@string/server_key_uid_title" />
+       
+       <EditTextPreference
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:defaultValue="@string/server_key_account_default"
+            android:key="@string/server_key_account_key"
+            android:title="@string/server_key_account_title" />
+                
+    </PreferenceCategory>
+</PreferenceScreen>

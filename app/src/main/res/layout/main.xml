@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+	<PreferenceCategory android:title="@string/app_operations_title"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" >
+		<CheckBoxPreference android:title="@string/appEnabled_title"
+			android:defaultValue="false" android:summary="@string/appEnabled_summary"
+			android:key="@string/appEnabled_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/extras_title" android:summary="@string/extras_summary"
+			android:key="@string/extras_key" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/app_configure_title"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" >
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/settings_title" android:summary="@string/settings_summary"
+			android:key="@string/settings_key" />
+
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/advanced_settings_title" android:summary="@string/advanced_settings_summary"
+			android:key="@string/advanced_settings_key" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/app_other_title"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" >
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/faq_title" android:summary="@string/faq_summary"
+			android:key="@string/faq_key" />
+
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/donateTo_title" android:key="@string/donateTo_key" />
+
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/about_title" android:summary=""
+			android:key="@string/about_key" />
+			
+	</PreferenceCategory>
+
+</PreferenceScreen>

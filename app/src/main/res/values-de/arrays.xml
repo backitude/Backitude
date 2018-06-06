@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="interval_list">
+		<item>15 Sekunden</item>
+		<item>30 Sekunden</item>
+		<item>1 Minute</item>
+		<item>3 Minuten</item>
+		<item>5 Minuten</item>
+		<item>10 Minuten</item>
+		<item>15 Minuten</item>
+		<item>20 Minuten</item>
+		<item>30 Minuten</item>
+		<item>1 Stunde</item>
+		<item>3 Stunden</item>
+		<item>Keine</item>
+	</string-array>
+
+	<string-array name="interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>60000</item>
+		<item>180000</item>
+		<item>300000</item>
+		<item>600000</item>
+		<item>900000</item>
+		<item>1200000</item>
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+		<item>99999999</item>
+	</string-array>
+
+	<string-array name="timeout_interval_list">
+		<item>15 Sekunden</item>
+		<item>30 Sekunden</item>
+		<item>45 Sekunden</item>
+		<item>1 Minute</item>
+		<item>5 Minuten</item>
+	</string-array>
+
+	<string-array name="timeout_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>45000</item>
+		<item>60000</item>
+		<item>300000</item>
+	</string-array>
+
+	<string-array name="statusBar_options">
+		<item>Niemals</item>
+		<item>Nur w�hrend Standortabfrage</item>
+		<item>Immer, wenn die Anwendung l�uft</item>
+		<item>Nur bei Aktualisierung im Dock-Modus</item>
+		<item>Bei Aktualisierung im Standard und Dock-Modus</item>
+	</string-array>
+
+	<string-array name="statusBar_option_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+
+	<string-array name="update_interval_list">
+		<item>Keine</item>
+		<item>15 Minuten</item>
+		<item>30 Minuten</item>
+		<item>1 Stunde</item>
+		<item>3 Stunden</item>
+	</string-array>
+
+	<string-array name="update_interval_values">
+		<item>0</item>
+		<item>900000</item>
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+	</string-array>
+
+	<string-array name="realtime_interval_list">
+		<item>15 Sekunden</item>
+		<item>30 Sekunden</item>
+		<item>1 Minute</item>
+		<item>3 Minuten</item>
+		<item>5 Minuten</item>
+		<item>10 Minuten</item>
+		<item>15 Minuten</item>
+		<item>20 Minuten</item>
+		<item>30 Minuten</item>
+		<item>1 Stunde</item>
+		<item>3 Stunden</item>
+	</string-array>
+
+	<string-array name="realtime_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>60000</item>
+		<item>180000</item>
+		<item>300000</item>
+		<item>600000</item>
+		<item>900000</item>
+		<item>1200000</item>
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+	</string-array>
+
+	<string-array name="realtime_timeout_interval_list">
+		<item>15 Sekunden</item>
+		<item>30 Sekunden</item>
+		<item>45 Sekunden</item>
+		<item>1 Minute</item>
+		<item>5 Minuten</item>
+	</string-array>
+
+	<string-array name="realtime_timeout_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>45000</item>
+		<item>60000</item>
+		<item>300000</item>
+	</string-array>
+	
+	<string-array name="wifi_mode_interval_list">
+		<item>30 Minuten</item>
+		<item>1 Stunde</item>
+		<item>3 Stunden</item>
+		<item>6 Stunden</item>
+		<item>12 Stunden</item>
+	</string-array>
+
+	<string-array name="wifi_mode_interval_values">
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+		<item>21600000</item>
+		<item>43200000</item>
+	</string-array>
+
+	<string-array name="wifi_mode_timeout_interval_list">
+		<item>15 Sekunden</item>
+		<item>30 Sekunden</item>
+		<item>45 Sekunden</item>
+		<item>1 Minute</item>
+		<item>5 Minuten</item>
+	</string-array>
+
+	<string-array name="wifi_mode_timeout_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>45000</item>
+		<item>60000</item>
+		<item>300000</item>
+	</string-array>
+	
+	<string-array name="max_steals_interval_list">
+		<item>15 Sekunden</item>
+		<item>30 Sekunden</item>
+		<item>1 Minute</item>
+		<item>5 Minuten</item>
+		<item>5 Minuten</item>
+	</string-array>
+	
+	<string-array name="max_steals_interval_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>60000</item>
+		<item>180000</item>
+		<item>300000</item>
+	</string-array>
+	
+	<string-array name="min_distance_list">
+		<item>Keine</item>
+		<item>10 Meter</item>
+		<item>20 Meter</item>
+		<item>50 Meter</item>
+		<item>100 Meter</item>
+		<item>250 Meter</item>
+		<item>500 Meter</item>
+		<item>1000 Meter</item>
+		<item>2000 Meter</item>
+		<item>3500 Meter</item>
+		<item>5000 Meter</item>
+		<item>Variabel</item>
+	</string-array>
+
+	<string-array name="min_distance_values">
+		<item>0</item>
+		<item>10</item>
+		<item>20</item>
+		<item>50</item>
+		<item>100</item>
+		<item>250</item>
+		<item>500</item>
+		<item>1000</item>
+		<item>2000</item>
+		<item>3500</item>
+		<item>5000</item>
+		<item>99999999</item>
+	</string-array>
+
+	<string-array name="gpsOption_entries">
+		<item>GPS, mit WLAN/Funkmast-Triangulation als Backup</item>
+		<item>GPS, mit WLAN als Backup</item>
+		<item>nur GPS</item>
+		<item>WLAN, mit GPS/Funkmast-Triangulation als Backup</item>
+		<item>WLAN, mit GPS als</item>
+		<item>WLAN, mit Funkmast-Triangulation als Backup</item>
+		<item>WLAN, danach GPS/Funkmast-Triangulation als Backup</item>
+		<item>WLAN, danach GPS als</item>
+		<item>nur WLAN</item>
+	</string-array>
+
+	<string-array name="gpsOption_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>8</item>
+		<item>9</item>
+		<item>7</item>
+	</string-array>
+
+	<string-array name="offlineSync_syncOptions_list">
+		<item>Nur manuelles Sync</item>
+		<item>Nur im WLAN</item>
+		<item>Bei Datenverbindung</item>
+	</string-array>
+
+	<string-array name="offlineSync_syncOptions_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="minGpsAccuracy_entries">
+		<item>4 Meter</item>
+		<item>6 Meter</item>
+		<item>8 Meter</item>
+		<item>12 Meter</item>
+		<item>20 Meter</item>
+		<item>50 Meter</item>
+	</string-array>
+
+	<string-array name="minGpsAccuracy_values">
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>12</item>
+		<item>20</item>
+		<item>50</item>
+	</string-array>
+
+	<string-array name="minWifiAccuracy_entries">
+		<item>20 Meter</item>
+		<item>40 Meter</item>
+		<item>75 Meter</item>
+		<item>100 Meter</item>
+		<item>200 Meter</item>
+		<item>400 Meter</item>
+	</string-array>
+
+	<string-array name="minWifiAccuracy_values">
+		<item>20</item>
+		<item>40</item>
+		<item>75</item>
+		<item>100</item>
+		<item>200</item>
+		<item>400</item>
+	</string-array>
+	
+	<string-array name="fallbackOptions_entries">
+		<item>Genauester Wert oder wiederhole Vorhergehenden</item>
+		<item>Genauester Wert oder keine Aktualisierung</item>
+		<item>Wiederhole Vorhergehenden, wenn kein genauer Wert</item>
+		<item>Keine Aktualisierung, wenn kein genauer Wert</item>
+	</string-array>
+	
+	<string-array name="fallbackOptions_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+</resources>

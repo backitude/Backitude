@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/push_widget_layout_id"
+	    android:layout_width="72dip"
+	    android:layout_height="72dip"
+	    android:focusable="true" >    
+
+	    <Button android:id="@+id/push_widget_button_id"
+	        android:text="@string/push_update_widget_text"
+	        android:layout_centerHorizontal="true"   
+			android:layout_centerVertical="true"
+			android:src="@drawable/push_image_selector"
+			android:background="@drawable/push_image_selector"
+			android:paddingTop="35dp"
+			android:textStyle="bold"
+			android:textSize="14sp"
+        	android:textColor="@android:color/white"
+        	android:textColorHighlight="#CCCCCC" 
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"/>
+
+	</RelativeLayout>

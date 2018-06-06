@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >	
+	<PreferenceCategory android:title="@string/category_realtime"
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+		<CheckBoxPreference android:title="@string/realtime_title"
+			android:defaultValue="false" android:summary="@string/realtime_text"
+			android:key="@string/realtime_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		<ListPreference android:title="@string/realtime_interval_title"
+			android:summary="@string/realtime_interval_summary" android:key="@string/realtime_interval_key"
+			android:defaultValue="@string/realtime_interval_default"
+			android:entries="@array/realtime_interval_list" android:entryValues="@array/realtime_interval_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		<ListPreference android:title="@string/realtime_timeout_interval_title"
+			android:summary="@string/realtime_timeout_interval_summary" android:key="@string/realtime_timeout_interval_key"
+			android:defaultValue="@string/realtime_timeout_interval_default"
+			android:entries="@array/realtime_timeout_interval_list" android:entryValues="@array/realtime_timeout_interval_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+	</PreferenceCategory>
+</PreferenceScreen>

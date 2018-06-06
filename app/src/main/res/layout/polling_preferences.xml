@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+    
+	<PreferenceCategory android:title="@string/category_standard"
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+	    
+		<ListPreference android:title="@string/interval_title"
+			android:summary="@string/interval_summary" android:key="@string/interval_key"
+			android:defaultValue="@string/interval_default" android:entries="@array/interval_list"
+			android:entryValues="@array/interval_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		
+		<ListPreference android:title="@string/timeout_interval_title"
+			android:summary="@string/timeout_interval_summary" android:key="@string/timeout_interval_key"
+			android:defaultValue="@string/timeout_default" android:entries="@array/timeout_interval_list"
+			android:entryValues="@array/timeout_interval_values" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+		
+		<CheckBoxPreference android:title="@string/update_toast_title"
+			android:defaultValue="true" android:summary="@string/update_toast_text"
+			android:key="@string/update_toast_key" 
+			android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />		
+			
+	</PreferenceCategory>
+	
+</PreferenceScreen>

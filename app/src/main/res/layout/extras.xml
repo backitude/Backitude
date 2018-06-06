@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+    
+    <PreferenceCategory android:title="@string/category_update_extras"
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/fire_title" android:summary="@string/fire_summary"
+			android:key="@string/fire_key" />
+			
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/send_fire_title" android:summary="@string/send_fire_summary"
+			android:key="@string/send_fire_key" />
+		
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/send_last_update_title" android:summary="@string/send_last_update_summary"
+			android:key="@string/send_last_update_key" />
+	</PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/category_offlineSync_extras" 
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+			
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/offlineSync_sync_title" android:summary="@string/offlineSync_sync_summary"
+			android:key="@string/offlineSync_sync_key" />
+
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/offlineSync_clear_title" android:summary="@string/offlineSync_clear_summary"
+			android:key="@string/offlineSync_clear_key" />
+
+	</PreferenceCategory>
+    
+	<PreferenceCategory android:title="@string/category_view_extras"
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/lastUpdate_title" android:summary="@string/lastUpdate_summary"
+			android:key="@string/lastUpdate_key" />
+
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/lastError_title" android:summary="@string/lastError_summary"
+			android:key="@string/lastError_key" />
+			
+		<Preference android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:title="@string/lastPush_title" android:summary="@string/lastPush_summary"
+			android:key="@string/lastPush_key" />
+
+	</PreferenceCategory>
+</PreferenceScreen>

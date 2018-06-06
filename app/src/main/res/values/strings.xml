@@ -1,3 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Backitude</string>
+	<string name="app_name">Backitude (beta)</string>
+	<string name="app_operations_title">Configurable background location polling and storage</string>
+	<string name="app_configure_title">Configure</string>
+	<string name="app_other_title">Other</string>
+	<string name="version">Version 0.99 (released September 2013)</string>
+	<string name="email">Report a Bug: backitude@gmail.com</string>
+
+	<string name="account_screen">Google Account selection</string>
+
+	<string name="appEnabled_key">appEnabled</string>
+	<string name="appEnabled_title">Enable Backitude</string>
+	<string name="appEnabled_summary">Background service is disabled</string>
+	<string name="appEnabled_summary_enabled">Background service is enabled</string>
+
+	<string name="settings_key">settings</string>
+	<string name="settings_title">Settings</string>
+	<string name="settings_summary">Edit application preferences</string>
+
+	<string name="account_prefs_key">accountName</string>
+	<string name="account_prefs_title">Google Account</string>
+	<string name="account_prefs_summary">No current Google user is saved</string>
+	
+	<string name="advanced_settings_key">advanced_settings</string>
+	<string name="advanced_settings_title">Advanced Settings</string>
+	<string name="advanced_settings_summary">Edit Android Location / Wi-Fi settings, Resource priority setting, Wake lock settings</string>
+
+	<string name="extras_key">extras</string>
+	<string name="extras_title">Extras</string>
+	<string name="extras_summary">Fire Updates, Manual Sync, View History Details</string>
+	
+	<string name="fire_key">runNow</string>
+	<string name="fire_title">Fire Update</string>
+	<string name="fire_summary">Perform a one-time location poll</string>
+
+	<string name="send_fire_key">send_fire</string>
+	<string name="send_fire_title">Fire Update on a Friend</string>
+	<string name="send_fire_summary">Send a fire update request to a friend via SMS message</string>
+
+	<string name="send_last_update_key">send_last_update</string>
+	<string name="send_last_update_title">Share Your Location</string>
+	<string name="send_last_update_summary">Send a Maps link of your last updated location to a friend</string>
+	
+	<string name="lastUpdate_key">lastUpdate</string>
+	<string name="lastUpdate_title">View Most Recent Location</string>
+	<string name="lastUpdate_summary">Display details of the most recent location polled</string>
+	<string name="lastUpdate_dialog">Most Recent Location Details</string>
+
+	<string name="lastError_key">lastError</string>
+	<string name="lastError_title">View Error History</string>
+	<string name="lastError_summary">Display details of the last errors thrown by application</string>
+	<string name="lastError_dialog">Error History Details</string>
+
+	<string name="lastPush_key">lastPush</string>
+	<string name="lastPush_title">View Push Update History</string>
+	<string name="lastPush_summary">Display details of the most recent update requests</string>
+	<string name="lastPush_dialog">Last Push Update Details</string>
+
+	<string name="faq_key">faq</string>
+	<string name="faq_title">FAQ</string>
+	<string name="faq_summary">Frequently Asked Questions</string>
+
+	<string name="donateTo_key">donateTo</string>
+	<string name="donateTo_title">Donate to Developer</string>
+	<string name="donateTo_link">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=BB8Y6KJVNKJVE</string>
+
+	<string name="about_key">about</string>
+	<string name="about_title">About Backitude</string>
+	<string name="about_summary">About Backitude</string>
+	<string name="about_intro">This application was originally designed to integrate with Google Latitude and replace its location services.  With the Google Latitude shutdown on August 9, 2013, Backitude will need to be tremendously overhauled to bring about new functionality.  The design is yet to be defined and come together, so please have patience.</string>
+	<string name="about_description1">Backitude is a background service application that polls your current location at a specified time interval using GPS, Wi-Fi, and/or Cell Tower triangulation.</string>
+	<string name="about_description2">When an accurate location value is achieved, the application will allow for a variety of location storage and export options.  Integrate SMS reply for friends, Dropbox and Google Drive for storage and sharing, KML export, and custom server posts.  The rest is yet to be determined!</string>
+
+	<string name="exit_title">Exit</string>
+
+	<string name="pref_set">Settings</string>
+	<string name="category_polling">Location Polling Options</string>
+	<string name="category_standard">Standard Mode Polling Options</string>
+	<string name="category_realtime">Docked Mode Polling Options</string>
+	<string name="category_wifi_mode">Wi-Fi Mode Polling Options</string>
+	<string name="category_update">Updating Options</string>
+	<string name="category_output">Output Options</string>
+	<string name="category_sendfire">Push Updates via SMS Messaging</string>
+	<string name="category_additional">Additional Settings</string>
+	<string name="category_system_settings">Android System Preferences</string>
+	<string name="category_location">Location Preferences</string>
+	<string name="category_sleep_mode">Sleep Mode Preferences</string>
+	<string name="category_offlineSync_settings">Off-line Location Storage and Sync Settings</string>
+	<string name="category_extras">Backitude Extras</string>
+	<string name="category_update_extras">Update Functions</string>
+	<string name="category_offlineSync_extras">Offline Storage and Sync Functions</string>
+	<string name="category_server_settings">Custom Server Settings</string>
+	<string name="category_server_parameters">Request Parameter Values</string>
+	<string name="category_server_keys">Request Parameter Keys</string>
+	<string name="category_view_extras">View History Details</string>
+	<string name="category_min_accuracy">Location Accuracy Settings</string>
+
+	<string name="polling_settings_key">polling_settings</string>
+	<string name="polling_settings_title">Standard Mode Settings</string>
+	<string name="polling_settings_summary">Edit polling preferences for standard background application behavior</string>
+
+	<string name="interval_key">interval</string>
+	<string name="interval_title">Time Interval Options</string>
+	<string name="interval_summary">Frequency for polling your current location</string>
+	<string name="interval_default">1800000</string>
+
+	<string name="timeout_interval_key">timeout_interval</string>
+	<string name="timeout_interval_title">Location Polling Timeout</string>
+	<string name="timeout_interval_summary">Maximum length of time for polling locations. Polling will stop when an accurate reading is achieved or the timeout is reached (to preserve battery)</string>
+	<string name="timeout_default">15000</string>
+
+	<string name="gpsOption_key">gpsOption</string>
+	<string name="gpsOption_title">Provider Priority</string>
+	<string name="gpsOption_summary">Set the location provider priority to preserve battery by aborting GPS polling when Wi-Fi location is acquired. Or eliminate the use of GPS polling altogether.</string>
+	<string name="gpsOption_default">1</string>
+	
+	<string name="timezone_key">timezone</string>
+	<string name="timezone_title">Time Zone Adjustment</string>
+	<string name="timezone_summary">Adjust the timestamps according with the Android time zone offset</string>
+
+	<string name="update_settings_key">update_settings</string>
+	<string name="update_settings_title">Update Settings</string>
+	<string name="update_settings_summary">Edit general update preferences for application</string>
+	
+	<string name="update_interval_key">resync_interval</string>
+	<string name="update_interval_title">Minimum Interval</string>
+	<string name="update_interval_default">0</string>
+	<string name="update_interval_summary">Minimum frequency for storing and sync\'ing the last detected location.  (Used to bypass minimum distance filter which may prevent locations from being stored)</string>
+
+	<string name="min_distance_key">minimum_distance</string>
+	<string name="min_distance_title">Minimum Change in Distance</string>
+	<string name="min_distance_default">0</string>
+	<string name="min_distance_summary">Location will not be stored unless the change in distance from the previous location is greater than the minimum distance value.</string>
+
+	<string name="steals_enabled_key">steals_enabled</string>
+	<string name="steals_enabled_title">Location Steals</string>
+	<string name="steals_enabled_summary">If another app locates your position accurately, Backitude will &quot;steal&quot; this location value and store your location. A successful &quot;steal&quot; will also restart your timed update interval.</string>
+
+	<string name="max_steals_interval_key">max_steals_interval</string>
+	<string name="max_steals_interval_title">Maximum Steals Rate</string>
+	<string name="max_steals_interval_summary">The fastest rate at which eligible "steals" will be stored when available.  (A buffer time between "steals")</string>
+	<string name="max_steals_interval_default">60000</string>
+	
+	<string name="accuracy_settings_key">accuracy_settings</string>
+	<string name="accuracy_settings_title">Accuracy Settings</string>
+	<string name="accuracy_settings_summary">Edit accuracy preferences</string>
+
+	<string name="fallbackOptions_key">fallbackOptions</string>
+	<string name="fallbackOptions_title">Timeout Fallback Options</string>
+	<string name="fallbackOptions_summary">Determines what action to take if the minimum accuracy requirements are not met during location polling for a new location</string>
+	<string name="fallbackOptions_default">1</string>
+
+	<string name="fallbackOptions_1">Update with the most accurate location acquired during location polling, or repeat previous update if no new locations were found at all.</string>
+	<string name="fallbackOptions_2">Update with the most accurate location acquired during location polling, but do not update if no new locations were found at all.</string>
+	<string name="fallbackOptions_3">If new location value is not found or does not meet minimum accuracy requirements, repeat previous update</string>
+	<string name="fallbackOptions_4">If new location value is not found or does not meet minimum accuracy requirements, do not update location</string>
+
+	<string name="min_accuracy_key">min_accuracy</string>
+	<string name="min_accuracy_title">Location Rollback</string>
+	<string name="min_accuracy_summary">If a new location is less accurate than the previous, and the previous location falls within the bounds of the new location, the application will repeat the previous location value.</string>
+
+	<string name="realtime_settings_key">realtime_settings</string>
+	<string name="realtime_settings_title">Docked Mode Settings</string>
+	<string name="realtime_settings_summary">Edit polling preferences for application behavior while plugged into a power supply</string>
+
+	<string name="realtime_key">realtime</string>
+	<string name="realtime_title">Docked Mode Enabled</string>
+	<string name="realtime_text">When plugged into a power supply or "docked" with the GPS enabled, app will automatically switch polling intervals for Docked Mode and switch back if un-plugged.</string>
+
+	<string name="realtime_interval_key">realtime_interval</string>
+	<string name="realtime_interval_title">Time Interval Options</string>
+	<string name="realtime_interval_summary">Frequency for polling location values while in Docked Mode with device charging and GPS enabled.</string>
+	<string name="realtime_interval_default">15000</string>
+
+	<string name="realtime_timeout_interval_key">realtime_timeout_interval</string>
+	<string name="realtime_timeout_interval_title">Location Polling Timeout</string>
+	<string name="realtime_timeout_interval_summary">Maximum length of time for polling locations when using Docked Mode updating. Polling will stop when an accurate reading is achieved or the timeout is reached</string>
+	<string name="realtime_timeout_interval_default">15000</string>
+
+	<string name="wifi_mode_settings_key">wifi_mode_settings</string>
+	<string name="wifi_mode_settings_title">Wi-Fi Mode Settings</string>
+	<string name="wifi_mode_settings_summary">Edit polling preferences for application behavior while connected to a Wi-Fi network.</string>
+
+	<string name="wifi_mode_key">wifi_mode</string>
+	<string name="wifi_mode_title">Wi-Fi Mode Enabled</string>
+	<string name="wifi_mode_text">When connected to a Wi-Fi network, app will automatically switch polling intervals for Wi-Fi Mode and switch back to standard mode if disconnected from the network.</string>
+
+	<string name="wifi_mode_interval_key">wifi_mode_interval</string>
+	<string name="wifi_mode_interval_title">Time Interval Options</string>
+	<string name="wifi_mode_interval_summary">Frequency for polling location values while in Wi-Fi Connected Mode.</string>
+	<string name="wifi_mode_interval_default">3600000</string>
+
+	<string name="wifi_mode_timeout_interval_key">wifi_mode_timeout_interval</string>
+	<string name="wifi_mode_timeout_interval_title">Location Polling Timeout</string>
+	<string name="wifi_mode_timeout_interval_summary">Maximum length of time for polling locations while in Wi-Fi Connected Mode. Polling will stop when an accurate reading is achieved or the timeout is reached</string>
+	<string name="wifi_mode_timeout_interval_default">15000</string>
+	
+	<string name="push_settings_key">push_settings</string>
+	<string name="push_settings_title">Push Update Settings</string>
+	<string name="push_settings_summary">Edit preferences for receiving "Fire Update" requests from others via SMS</string>
+
+	<string name="sendfire_enabled_key">sendfire_enabled</string>
+	<string name="sendfire_enabled_title">Push Enabled</string>
+	<string name="sendfire_enabled_text">Allow others to send an automatic update trigger to your phone via SMS messaging</string>
+
+	<string name="sendback_enabled_key">sendback_enabled</string>
+	<string name="sendback_enabled_title">SMS Reply Enabled</string>
+	<string name="sendback_enabled_text">Application will send location back via SMS messaging to the number that originally requested the Fire Update.</string>
+	
+	<string name="sendfire_msg_key">sendfire_msg</string>
+	<string name="sendfire_msg_title">Display Message</string>
+	<string name="sendfire_msg_text">A message is displayed to the screen when a Fire Update request is received from a friend</string>
+
+	<string name="sendfire_notif_key">sendfire_notif</string>
+	<string name="sendfire_notif_title">Display Push Notification</string>
+	<string name="sendfire_notif_text">Display a notification bar message when a Fire Update request is received from a friend</string>
+
+	<string name="sendfire_secret_key">sendfire_secret</string>
+	<string name="sendfire_secret_title">Secret Suffix</string>
+	<string name="sendfire_secret_text">A secret suffix phrase can be required at the end of your incoming "Force Backitude Update" SMS commands to prevent unwanted push updates from other users.  Set a secret suffix here and share with your desired friends to apply to their push updates. (ie, "Force Backitude Update12345")</string>
+	<string name="sendfire_secret_dialogTitle">Please enter a secret suffix</string>
+	<string name="FORCE_BACKITUDE_UPDATE">Force Backitude Update</string>
+
+	<string name="statusBar_key">statusBar</string>
+	<string name="statusBar_title">Status Bar Icon</string>
+	<string name="statusBar_summary">Show a status bar icon in the notification area</string>
+	<string name="statusBar_default">2</string>
+
+	<string name="update_toast_key">update_toast</string>
+	<string name="update_toast_title">Display Update Message</string>
+	<string name="update_toast_text">After polling for a new location and attemping to store the value, a message is briefly displayed on the screen indicating success or failure.</string>
+
+	<string name="display_error_key">display_error</string>
+	<string name="display_error_title">Display Failure Notifications</string>
+	<string name="display_error_text">Display a notification bar message when the application fails on a request.</string>
+
+	<string name="loc_sys_settings_key">loc_sys_settings</string>
+	<string name="loc_sys_settings_title">System Location Settings</string>
+	<string name="GPS_on">GPS Location detection is currently turned on</string>
+	<string name="NetworkLoc_on">Cell Tower/Wi-Fi Location detection is currently turned on.</string>
+	<string name="GPS_NetworkLoc_on">GPS and Cell Tower/Wi-Fi location detections are currently turned on.</string>
+	<string name="GPS_NetworkLoc_off">All location providers are currently turned OFF, application cannot function properly.</string>
+
+	<string name="minGpsAccuracy_key">minGpsAccuracy</string>
+	<string name="minGpsAccuracy_title">Minimum GPS Accuracy</string>
+	<string name="minGpsAccuracy_summary">Location polling will require an accuracy value of at least this degree before stopping to update unless the timeout occurs.</string>
+	<string name="minGpsAccuracy_default">6</string>
+	
+	<string name="minWifiAccuracy_key">minWifiAccuracy</string>
+	<string name="minWifiAccuracy_title">Minimum Wi-Fi Accuracy</string>
+	<string name="minWifiAccuracy_summary">Location polling will require an accuracy value of at least this degree before stopping to update unless the timeout occurs.</string>
+	<string name="minWifiAccuracy_default">100</string>
+
+	<string name="wifi_sys_title">System Wi-Fi Settings</string>
+	<string name="wifi_sys_key">wifi_sys</string>
+	<string name="Wifi_sys_on">Wi-Fi connections are enabled..network locations should be more accurate if available</string>
+	<string name="Wifi_sys_off">Wi-Fi connections are disabled.. If desired, enable for more accurate network locations.</string>
+
+	<string name="wake_lock_key">wake_lock</string>
+	<string name="wake_lock_title">Wake Lock enabled</string>
+	<string name="wake_lock_summary">When in sleep mode, wake the system to poll and update locations (system will resume sleeping after each update)</string>
+	
+	<string name="wifi_lock_key">wifi_lock</string>
+	<string name="wifi_lock_title">Wi-Fi Lock enabled</string>
+	<string name="wifi_lock_summary">When in sleep mode, wake the Wi-Fi connection to poll and update locations (Wi-Fi will resume sleeping after each update)</string>
+	<string name="wifi_lock_connecting">Waking the Wi-Fi connection for polling and update capabilities.</string>
+	
+	<string name="offline_settings_key">offline_settings</string>
+	<string name="offline_settings_title">Offline Storage Settings</string>
+	<string name="offline_settings_summary">Edit offline storage preferences</string>
+
+	<string name="offlineSync_enabled_key">offline_sync</string>
+	<string name="offlineSync_enabled_title">Offline Storage Enabled</string>
+	<string name="offlineSync_enabled_summary">Store location values on device if data network service is not available at the time of discovery.  Values can be exported or shared at a later time once connected.</string>
+
+	<string name="offlineSync_syncOptions_key">syncOptions</string>
+	<string name="offlineSync_syncOptions_title">Sync Options</string>
+	<string name="offlineSync_syncOptions_summary">Select when the application will sync offline location records that have been stored on the device</string>
+	<string name="offlineSync_syncOptions_default">3</string>
+
+	<string name="wifiOnly_enabled_key">wifiOnly_enabled</string>
+	<string name="wifiOnly_enabled_title">Data Roam/Reduction Mode</string>
+	<string name="wifiOnly_enabled_summary">Only sync when Wi-Fi connection is available.</string>
+
+	<string name="offlineSync_toast_key">offlineSync_toast</string>
+	<string name="offlineSync_toast_title">Display Sync Message</string>
+	<string name="offlineSync_toast_text">After completing offline sync, a message is briefly displayed on the screen indicating success or failure.</string>
+
+	<string name="offlineSync_delete_key">offlineSync_delete</string>
+	<string name="offlineSync_delete_title">Clear Records after Sync</string>
+	<string name="offlineSync_delete_text">Any stored records that have been successfully posted, will be removed from the local database.</string>
+		
+	<string name="offlineSync_sync_key">manual_offline_sync</string>
+	<string name="offlineSync_sync_title">Sync Offline data</string>
+	<string name="offlineSync_sync_summary">Sends offline location values to customizable server URL for Location History.  Stored values are automatically cleared upon successful transmission or export.</string>
+	<string name="offlineSync_sync_summary1">Sends offline location values to customizable server URL for Location History.  Stored values are automatically cleared upon successful transmission or export. (records currently exist)</string>
+	<string name="offlineSync_sync_summary2">Sends offline location values to customizable server URL for Location History.  Stored values are automatically cleared upon successful transmission or export. (No records currently exist)</string>
+	
+	<string name="offlineSync_clear_key">clear_offline_history</string>
+	<string name="offlineSync_clear_title">Clear Offline data</string>
+	<string name="offlineSync_clear_summary">Deletes the offline location values in storage.</string>
+	
+	<string name="PERFORMING_SYNC_MSG">Performing Sync</string>
+	<string name="SYNC_DIALOG_MSG">Sending offline location to custom server location.</string>
+	<string name="SYNC_FAIL">Sync Failure: reverting sync preference to "Manual"</string>
+
+	<string name="export_key">export</string>
+	<string name="export_title">Internal Memory Storage Options</string>
+	<string name="export_summary">Location values can be stored locally on the device in many different forms</string>
+	<string name="export_default">1</string>
+	
+	<string name="test_connection_key">runNow</string>
+	<string name="test_connection_title">Run Test</string>
+	<string name="test_connection_summary">Poll the current location and send a request to the custom server to test the settings</string>
+	
+	<string name="server_settings_key">server_settings</string>
+	<string name="server_settings_title">Custom Server Settings</string>
+	<string name="server_settings_summary">Edit custom server preferences</string>
+
+	<string name="server_url_key">server_url</string>
+	<string name="server_url_title">Server URL</string>
+	<string name="server_url_summary">Configure a custom server to send location data to on the fly.</string>
+	<string name="server_url_default">http://</string>
+	
+	<string name="authentication_key">authentication</string>
+	<string name="authentication_title">Authentication Options</string>
+	<string name="authentication_summary">Choose which type of http post authentication method you would like to use for Custom Server POSTs</string>
+	<string name="authentication_default">1</string>
+	
+	<string name="server_user_name_key">server_user_name</string>
+	<string name="server_user_name_title">User Name</string>
+	<string name="server_user_name_summary">User name for authentication with server (may not be required)</string>
+	
+	<string name="server_password_key">server_password</string>
+	<string name="server_password_title">Password</string>
+	<string name="server_password_summary">Password for authentication with server (may not be required)</string>
+	
+	<string name="server_uid_key">server_uid</string>
+	<string name="server_uid_title">Device ID</string>
+	<string name="server_uid_summary">ID to distinguish device and user amongst other requests sent to server using the same authentication (may not be required)</string>
+	
+	<string name="server_key_username_key">server_key_username</string>
+	<string name="server_key_username_title">User Name</string>
+	<string name="server_key_username_default">username</string>
+	
+	<string name="server_key_password_key">server_key_password</string>
+	<string name="server_key_password_title">Password</string>
+	<string name="server_key_password_default">password</string>
+	
+	<string name="server_key_latitude_key">server_key_latitude</string>
+	<string name="server_key_latitude_title">Latitude</string>
+	<string name="server_key_latitude_default">latitude</string>
+	
+	<string name="server_key_longitude_key">server_key_longitude</string>
+	<string name="server_key_longitude_title">Longitude</string>
+	<string name="server_key_longitude_default">longitude</string>
+	
+	<string name="server_key_loc_timestamp_key">server_key_loc_timestamp</string>
+	<string name="server_key_loc_timestamp_title">Location Timestamp (UTC)</string>
+	<string name="server_key_loc_timestamp_default">utc_timestamp</string>
+		
+	<string name="server_key_req_timestamp_key">server_key_req_timestamp</string>
+	<string name="server_key_req_timestamp_title">Request Timestamp (UTC)</string>
+	<string name="server_key_req_timestamp_default">req_timestamp</string>
+	
+	<string name="server_key_accuracy_key">server_key_accuracy</string>
+	<string name="server_key_accuracy_title">Accuracy</string>
+	<string name="server_key_accuracy_default"></string>
+	
+	<string name="server_key_speed_key">server_key_speed</string>
+	<string name="server_key_speed_title">Speed</string>
+	<string name="server_key_speed_default"></string>
+	
+	<string name="server_key_altitude_key">server_key_altitude</string>
+	<string name="server_key_altitude_title">Altitude</string>
+	<string name="server_key_altitude_default"></string>
+	
+	<string name="server_key_bearing_key">server_key_bearing</string>
+	<string name="server_key_bearing_title">Direction Bearing</string>
+	<string name="server_key_bearing_default"></string>
+	
+	<string name="server_key_uid_key">server_key_uid</string>
+	<string name="server_key_uid_title">Device ID</string>
+	<string name="server_key_uid_default"></string>
+	
+	<string name="server_key_account_key">server_key_account</string>
+	<string name="server_key_account_title">Google Account</string>
+	<string name="server_key_account_default"></string>
+	
+	<string name="onOffWidgetText">Backitude: On/Off</string>
+	<string name="fireWidgetText">Backitude: Fire</string>
+	<string name="realtimeWidgetText">Backitude: Docked</string>
+	<string name="pushWidgetText">Backitude: Push</string>
+	<string name="pushWidgetConfig_title">Push Update Widget Configuration</string>
+	<string name="pushWidgetConfig_text">A contact number may be assigned to each widget for auto-populating the SMS recipient address with the selected value, or the default will leave the recipient list (blank) to complete on click</string>
+
+	<string name="ACCOUNT_SELECTION">Select a Google account</string>
+	<string name="CURRENT_ACCOUNT_SELECTED">Current selection:</string>	
+	<string name="NO_CURRENT_ACCOUNT_SELECTED">No current account is saved</string>
+	
+	<string name="APP_STOPPED">The application has been stopped</string>
+	<string name="TOKEN_REFRESH">Retrieving authentication token.</string>
+	<string name="LOC_SERVICE_RUNNING">The Location updating service may already be running</string>
+
+	<string name="STEALS_ONLY_MESSAGE_1">Steals and Minimum Time Interval will still be active as long as enabled</string>
+	<string name="STEALS_ONLY_MESSAGE_2">Steals will still occur as long as application is enabled</string>
+	<string name="STEALS_ONLY_MESSAGE_3">This mode can be utilized in an effort to conserve battery power</string>
+	<string name="STEALS_ONLY_MESSAGE_4">Minimum Time Interval will still occur as long as application is enabled</string>
+	<string name="STEALS_ONLY_MESSAGE_5">This mode is used to bypass minimum distance rules and maintain a minimum interval of location values</string>
+	<string name="BAD_CONFIG">Backitude cannot perform any operations with this configuration.</string>
+	<string name="STEALS_BUFFER_RATE">Warning! Steals feature will only function if buffer rate is faster than current polling rate.</string>
+	<string name="ENFORCE_ACCURACY">Repeats previous location value if it is more accurate and within accuracy vicinity of the newly polled location</string>
+	<string name="NO_UID_KEY">No Device ID parameter key configured, value will not POST (configure below)</string>
+
+	<string name="SUCCESS">Backitude: Success!</string>
+	<string name="LAST_UPDATE_NA">Not Available</string>
+	<string name="NO_PUSH_HISTORY">No push history</string>
+
+	<string name="POLLING_NOTIFICATION">Application is currently polling for location updates.</string>
+	<string name="RUNNING_NOTIFICATION">Application is currently running.</string>
+	<string name="REALTIME_NOTIFICATION">Docked Mode updating interval is active.</string>
+	<string name="STATUS_BAR_TITLE">Backituding</string>
+	<string name="STATUS_BAR_MODE1">Standard Mode Interval</string>
+	<string name="STATUS_BAR_MODE2">Wi-Fi Mode Interval</string>
+	<string name="STATUS_BAR_MODE3">Docked Mode Interval</string>
+	<string name="WARNING_NOTIFICATION">Backitude has missed an update. Please try again, if problems persist contact developer.</string>
+	<string name="PERMISSION_NOTIFICATION_403">Permission denied.</string>
+	<string name="PERMISSION_NOTIFICATION_403B">Daily Update Limit for all users exceeded until 12:00AM EST(US)</string>
+	<string name="PERMISSION_NOTIFICATION_503">Service can be unavailable for a number of reasons.</string>
+	<string name="UPDATE_REQUEST_SENT">fired a Backitude update</string>
+	
+	<string name="APP_NAME">Backitude</string>
+		
+	<string name="LAST_UPDATE_LOC_TIME">Location Time:</string>
+	<string name="LAST_UPDATE_TIME">Last Updated:</string>
+	<string name="LAST_UPDATE_LAT">Latitude:</string>
+	<string name="LAST_UPDATE_LONG">Longitude:</string>
+	<string name="LAST_UPDATE_ACCUR">Accuracy:</string>
+	<string name="LAST_UPDATE_SPEED">Speed:</string>
+	<string name="LAST_UPDATE_ALTITUDE">Altitude:</string>
+	<string name="LAST_UPDATE_BEARING">Bearing:</string>
+	<string name="LAST_UPDATE_TYPE">Type:</string>
+
+	<string name="ERROR_LABEL">Error:</string>
+	<string name="ERROR_TS_LABEL">Timestamp:</string>
+		
+	<string name="LAST_PUSH_HISTORY">Request from: </string>
+	<string name="PUSH_NOTIF">Push Update (received)</string>
+	<string name="PERMISSION_DENIED">Permission Denied</string>
+	<string name="REFRESH_DENIED">Token refresh denied.</string>
+	
+	<string name="NO_UPDATE_NO_RECORDS">Backitude has uploaded all offline records to server.</string>
+	<string name="NO_UPDATE_NO_NETWORK">Cannot store location at this time. No network signal available</string>
+	<string name="NO_UPDATE_NO_ACCOUNT">Cannot store location at this time. No user account has been configured</string>
+	<string name="NO_UPDATE_NO_DEST">Cannot store location at this time.  No destination is defined.</string>
+	<string name="NO_UPDATE_NO_WIFI">Cannot send an update at this time.  No Wi-Fi connection available while Data Roam/Reduction mode is enabled.  Enable Offline Storage to sync at a later time.</string>
+	<string name="NO_FIRE_NO_NETWORK">Cannot Fire an update at this time. No network signal available</string>
+	<string name="NO_FIRE_NO_WIFI">Cannot Fire an update at this time.  No Wi-Fi connection available while Data Roam/Reduction mode is enabled.  Enable Offline Storage to sync at a later time.</string>
+	<string name="NO_FIRE_NO_PROVIDER">Cannot Fire an update at this time. (No configured Location providers are enabled)</string>
+	<string name="NO_FIRE_NO_ACCOUNT">Cannot Fire an update at this time. (Account unknown)</string>
+	<string name="NO_POLL_NO_NETWORK">Cannot poll an update at this time. No network signal available</string>
+	<string name="NO_POLL_NO_WIFI">Cannot poll an update at this time.  No Wi-Fi connection available while Data Roam/Reduction mode is enabled.  Enable Offline Storage to sync at a later time.</string>
+	<string name="NO_LOCATION_PROVIDERS_ENABLED">No location providers enabled. (Backitude turning off)</string>
+	<string name="NO_LOCATION_PROVIDERS_DESC">No location providers enabled. This is due to your Google Location Services or GPS Location Services settings in Android Location settings, or your allowable location providers as specified in Backitude \> Advanced Settings \> Set Priority.</string>
+	<string name="NO_ENABLE_NO_PROVIDER">Cannot enable background service at this time. (No configured Location providers are enabled)</string>
+	<string name="NO_ENABLE_NO_ACCOUNT">Cannot enable background service at this time. (Account unknown)</string>
+	
+	<string name="UPDATE_FAILED_403">Update failed. (Permission denied)</string>
+	<string name="UPDATE_FAILED">Update failed.</string>
+	<string name="LOCATION_STORED">Location saved for future sync.</string>
+	<string name="TOKEN_REFRESH_FAILED">Failed to refresh authentication token.</string>
+
+	<string name="SMS_REQUIRED">SMS is required to automatically ping your Backitude friends.  If firing from a tablet or an SMS disabled device, try text emailing their device the phrase \"Force Backitude Update\" to perform the function.</string>
+	<string name="CONTACT_DEV">Please see Error Log or contact developer for assistance.</string>
+	<string name="TRY_AGAIN_LATER">Please try again later or contact developer.</string>
+	<string name="DATABASE_ERROR">There is a problem connecting to the database.</string>
+	<string name="PARAMETER_DISABLED">(No Value - Do Not POST)</string>
+	
+	<string name="ARE_YOU_SURE">Are you sure?</string>
+	<string name="YES">Yes</string>
+	<string name="NO">No</string>
+	
+	<string name="SHARE_LOCATION_SUBJECT">My current location</string>
+	<string name="SHARE_TITLE">Share Your Location</string>
+	<string name="SHARE_LOCATION_BODY">Here is a link to my location: </string>
+	<string name="SHARE_LOCATION_BODY_2">(Provided by Backitude, free in Google Play Store)</string>
+	<string name="NO_WAY_TO_SHARE">No apps available to share location.</string>
+	<string name="NO_LOCATION_TO_SHARE">No location value available to share.</string>
+	
+	<string name="UPDATE_TYPE_POLL">Poll</string>
+	<string name="UPDATE_TYPE_RESYNC">Re-Sync</string>
+	<string name="UPDATE_TYPE_STEAL">Steal</string>
+	<string name="UPDATE_TYPE_FIRE">Fire</string>
+	<string name="UPDATE_TYPE_OFFLINE_SYNC">Offline</string>
+	<string name="UPDATE_TYPE_MANUAL">Manual</string>
+	<string name="UPDATE_TYPE_PUSH">Push</string>
+	
+	<string name="push_update_widget_text">(default)</string>
+	<string name="push_update_widget_button1">Assign Account</string>
+	<string name="push_update_widget_button2">Skip</string>
+		
+	<string name="seconds">seconds</string>
+	<string name="minute">minute</string>
+	<string name="minutes">minutes</string>
+	<string name="hour">hour</string>
+	<string name="hours">hours</string>
+	<string name="none">None</string>
+	
+	<string name="preferences_menu_choice1">Advanced Options</string>
+	<string name="preferences_menu_choice2">Back</string>
+	<string name="menu_choice1_title">Select Account</string>
 </resources>
